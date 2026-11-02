@@ -1,0 +1,158 @@
+:root {
+    --primary-color: green;
+    --secondary-color: #f8f8f8;
+    --button-backround-color: brown;
+    --button-color: white;
+    --secondary-button-backround-color: rgb(1, 1, 85);
+}
+
+.header-container {
+    position: relative;
+    display: block
+}
+
+.main-header-content {
+    text-align: center;
+    display: block;
+    position: relative;
+    font-size: 1.25rem;
+    padding-top: 2rem;
+}
+
+.main-header-content #site-title {
+    font-size: 3.25rem;
+}
+
+#site-title {
+    font-size: 36px;
+    /* text-align: center; */
+    font-weight: bold;
+    float: none;
+}
+
+/*____________________________
+| 
+|  Turle images in header 
+______________________________*/
+.left-header-container {
+    float: left;
+    text-align: center;
+}
+
+.right-header-container {
+    float: right;
+    text-align: center;
+}
+
+.left-header-container img {
+    max-width: 100%;
+    display: inline-block;
+    margin: auto;
+    transform: rotate(25deg);
+}
+
+.right-header-container img {
+    max-width: 100%;
+    display: inline-block;
+    margin: auto;
+    transform: rotate(-25deg);
+}
+
+/* Header Navigation menu*/
+
+nav {
+    clear: both;
+}
+
+nav ul {
+    display: block;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+nav ul li {
+    background-color: var(--primary-color);
+    width: calc(20% - 12px);
+    display: inline-block;
+    list-style: none;
+    border: 2px solid var(--primary-color);
+}
+
+li.current-page {
+    background-color: var(--secondary-color);
+}
+
+nav ul li a {
+    color: var(--button-color);
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+nav ul li.current-page a {
+    color: var(--primary-color);
+}
+
+.ttss-primary-btn {
+    background-color: var(--button-backround-color);
+    color: var(--button-color);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+
+.ttss-secondary-btn {
+    background-color: var(--secondary-button-backround-color);
+    color: var(--button-color);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+
+video {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 608px) {
+    .left-header-container {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .right-header-container {
+        float: none;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .main-header-content {
+        padding-top: 1rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        border: 2px solid var(--primary-color);
+        margin-bottom: 3px;
+    }
+
+    nav ul li.current-page {
+        background-color: var(--button-color);
+
+    }
+}
+
+/* site content section */
+#site-content {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
