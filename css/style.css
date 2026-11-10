@@ -112,8 +112,7 @@ nav ul li.current-page a {
     padding: .5rem 1rem;
     font-size: 1.5rem;
     border-radius: 12px;
-}
-
+    display: inline-block;
 video {
     max-width: 100%;
 }
